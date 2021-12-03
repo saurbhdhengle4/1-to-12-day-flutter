@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:weather/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final int days = 30;
-    final String name = "Latur";
+    final String name = "Catalog App";
 
     return Scaffold(
       appBar: AppBar(
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
           child: Text("welcom to $days of by $name"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
